@@ -1,24 +1,24 @@
-package com.devs.horoscope.ui.luck
+package com.devs.horoscope.ui.home.horoscope
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.devs.horoscope.databinding.FragmentLuckBinding
-import dagger.hilt.android.AndroidEntryPoint
+import com.devs.horoscope.databinding.FragmentHoroscopeBinding
 
-@AndroidEntryPoint
-class LuckFragment : Fragment() {
 
-    private var _binding: FragmentLuckBinding? = null
+class HoroscopeFragment : Fragment() {
+
+    private var _binding: FragmentHoroscopeBinding? = null
     private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentLuckBinding.inflate(
+        _binding = FragmentHoroscopeBinding.inflate(
             layoutInflater, container, false
         )
         return binding.root

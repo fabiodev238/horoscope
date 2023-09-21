@@ -2,23 +2,16 @@ package com.devs.horoscope.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.devs.horoscope.R
 import com.devs.horoscope.databinding.ActivityMainBinding
-import com.devs.horoscope.ui.horoscope.HoroscopeViewModel
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-
-    private val horoscopeViewModel by viewModels<HoroscopeViewModel>()
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,8 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initNavigation() {
-        val navHost =
-            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navHost = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHost.navController
         binding.bottomNavView.setupWithNavController(navController)
 
