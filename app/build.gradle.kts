@@ -38,6 +38,9 @@ android {
     buildFeatures {
         viewBinding = true
     }
+ //   kotlin {
+    //    jvmToolchain(8)
+  //  }
 }
 
 dependencies {
@@ -51,8 +54,6 @@ dependencies {
     //DaggerHilt
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-compiler:2.48")
-
-
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
