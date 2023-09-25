@@ -11,10 +11,10 @@ import com.devs.horoscope.databinding.ActivityMainBinding
 import com.devs.horoscope.ui.horoscope.HoroscopeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
+//3:38
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-
-    private val horoscopeViewModel by viewModels<HoroscopeViewModel>()//ver
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
