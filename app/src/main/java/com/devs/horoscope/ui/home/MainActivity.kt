@@ -11,7 +11,7 @@ import com.devs.horoscope.databinding.ActivityMainBinding
 import com.devs.horoscope.ui.horoscope.HoroscopeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
-//3:38
+//4:55
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

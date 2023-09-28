@@ -43,7 +43,7 @@ class HoroscopeFragment : Fragment() {
                 Aquarius -> HoroscopeModel.Aquarius
                 Aries -> HoroscopeModel.Aries
                 Cancer -> HoroscopeModel.Cancer
-                Capricorn -> HoroscopeModel.Cancer
+                Capricorn -> HoroscopeModel.Capricorn
                 Gemini -> HoroscopeModel.Gemini
                 Leo -> HoroscopeModel.Leo
                 Libra -> HoroscopeModel.Libra
@@ -52,6 +52,7 @@ class HoroscopeFragment : Fragment() {
                 Scorpio -> HoroscopeModel.Scorpio
                 Taurus -> HoroscopeModel.Taurus
                 Virgo -> HoroscopeModel.Virgo
+
             }
 
             findNavController().navigate(

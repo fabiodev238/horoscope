@@ -11,6 +11,7 @@ class HoroscopeProvider @Inject constructor() {
             Aries,
             Taurus,
             Gemini,
+            Cancer,
             Leo,
             Virgo,
             Libra,
