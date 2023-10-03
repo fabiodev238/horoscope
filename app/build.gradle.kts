@@ -30,7 +30,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-        //    resValue("String", "fabioname", "HoroscApp")
+            //    resValue("String", "fabioname", "HoroscApp")
 
             buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
 
@@ -38,7 +38,7 @@ android {
         getByName("debug") {
 
             isDebuggable = true
-         //   resValue("String", "fabioname", "debug_HoroscApp")--> revisar 5:20 todo
+            //   resValue("String", "fabioname", "debug_HoroscApp")--> revisar 5:20 todo
 
             buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
@@ -63,6 +63,7 @@ android {
 dependencies {
 
     val navVersion = "2.7.1"
+    val cameraVersion = "1.2.3"
 
     //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
@@ -77,6 +78,12 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.3.1")
 
+    //Camera X
+    implementation ("androidx.camera:camera-core:${cameraVersion}")
+    implementation ("androidx.camera:camera-camera2:${cameraVersion}")
+    implementation ("androidx.camera:camera-lifecycle:${cameraVersion}")
+    implementation ("androidx.camera:camera-view:${cameraVersion}")
+    implementation ("androidx.camera:camera-extensions:${cameraVersion}")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
