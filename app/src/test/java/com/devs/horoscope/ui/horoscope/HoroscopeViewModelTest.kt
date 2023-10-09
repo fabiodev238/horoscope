@@ -11,7 +11,6 @@ import org.junit.Test
 
 class HoroscopeViewModelTest {
 
-
     @MockK
     lateinit var horoscopeProvider: HoroscopeProvider
 
