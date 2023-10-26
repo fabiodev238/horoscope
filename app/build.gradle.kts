@@ -55,9 +55,6 @@ android {
         viewBinding = true
         buildConfig = true
     }
-    //   kotlin {
-    //    jvmToolchain(8)
-    //  }
 }
 
 dependencies {

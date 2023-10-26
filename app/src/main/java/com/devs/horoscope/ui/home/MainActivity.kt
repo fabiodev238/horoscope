@@ -11,8 +11,7 @@ import com.devs.horoscope.databinding.ActivityMainBinding
 import com.devs.horoscope.ui.horoscope.HoroscopeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
-//5:20 revisar
-//6:52
+
 
 
 @AndroidEntryPoint
