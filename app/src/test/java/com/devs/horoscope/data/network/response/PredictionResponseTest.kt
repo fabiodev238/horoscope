@@ -11,13 +11,13 @@ class PredictionResponseTest {
     @Test
     fun `toDomain should return a correct PredictionModel`() {
 
-        //Given
+
         val horoscopeResponse = anyResponse
 
-        //When
+
         val predictionModel = horoscopeResponse.toDomain()
 
-        //Then
+
         predictionModel.sign shouldBe horoscopeResponse.sign
         predictionModel.horoscope shouldBe horoscopeResponse.horoscope
 

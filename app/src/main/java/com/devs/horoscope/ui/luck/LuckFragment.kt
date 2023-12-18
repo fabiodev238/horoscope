@@ -66,7 +66,7 @@ class LuckFragment : Fragment() {
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initListeners() {
-      //  binding.ivRoulette.setOnClickListener { spinRoulette() }
+
         binding.ivRoulette.setOnTouchListener(object:OnSwipeTouchListener(requireContext()){
             override fun onSwipeRight() {
                 spinRoulette()

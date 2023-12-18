@@ -44,7 +44,7 @@ class PalmistryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         if (checkCameraPermission()) {
-            //permiso aceptado
+
             starCamera()
         } else {
 
@@ -67,7 +67,7 @@ class PalmistryFragment : Fragment() {
                 cameraProvider.bindToLifecycle(this, cameraSelector,preview)
 
             }catch (e:Exception){
-                Log.e("error", "hubo un erro${e.message}")
+                Log.e("error", "hubo un error ${e.message}")
             }
         },ContextCompat.getMainExecutor(requireContext()))
     }

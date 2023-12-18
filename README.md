@@ -1,14 +1,19 @@
-App con con las siguientes caracteristicas en el codigo:
 
-- Arquitectura MVVM y clean code
+  YouTube
+  🚀 CURSO: ANDROID nivel INTERMEDIO con KOTLIN - TUTORIAL ANDROID STUDIO [2024]
+  Programación Android by AristiDevs
+
+App with the following characteristics in the code:
+
+- Architecture MVVM and clean code
 - Fragments
 - Navigation Component
 - Gradle KTS
-- Inyección de dependencias
-- StateFlow y corrutinas
+- dependency injection
+- StateFlow y coroutines
 - RecyclerView
-- Retrofit, interceptors y mappers
-- Intents
+- Retrofit, interceptors and mappers
+- Intent
 - Camera X
-- Animaciones
+- Animations
 - UnitTest y UITest
