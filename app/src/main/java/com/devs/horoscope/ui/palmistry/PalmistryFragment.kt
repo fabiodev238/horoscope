@@ -67,7 +67,7 @@ class PalmistryFragment : Fragment() {
                 cameraProvider.bindToLifecycle(this, cameraSelector,preview)
 
             }catch (e:Exception){
-                Log.e("error", "hubo un error ${e.message}")
+                Log.e("error", "Lo siento, hubo un error ${e.message}")
             }
         },ContextCompat.getMainExecutor(requireContext()))
     }
