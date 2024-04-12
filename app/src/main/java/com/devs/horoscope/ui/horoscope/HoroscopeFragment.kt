@@ -72,7 +72,6 @@ class HoroscopeFragment : Fragment() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 horoscopeViewModel.horoscope.collect() {
-                    //cambios en horoscope
                     horoscopeAdapter.updateList(it)
                 }
             }
