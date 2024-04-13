@@ -13,7 +13,7 @@ class RepositoryImpl @Inject constructor(private val apiService: HoroscopeApiSer
             apiService.getHoroscope(sign)
         }
             .onSuccess { return it.toDomain()}
-            .onFailure { Log.e("Amigo", "Ha ocurrido un WTF Error!${it.message}") }
+            .onFailure { Log.e("Amigo", "Ha ocurrido un Error!${it.message}") }
 
         return null
     }
