@@ -17,3 +17,4 @@ App with the following characteristics in the code:
 - Camera X
 - Animations
 - UnitTest y UITest
+- ci/cd
