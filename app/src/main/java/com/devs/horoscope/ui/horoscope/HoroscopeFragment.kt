@@ -1,6 +1,7 @@
 package com.devs.horoscope.ui.horoscope
 
 import android.os.Bundle
+import android.view.ContextMenu
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,6 +36,14 @@ class HoroscopeFragment : Fragment() {
     private fun initUI() {
         initList()
         initUIState()
+    }
+
+    override fun onCreateContextMenu(
+        menu: ContextMenu,
+        v: View,
+        menuInfo: ContextMenu.ContextMenuInfo?
+    ) {
+
     }
 
     private fun initList() {
