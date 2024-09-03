@@ -37,11 +37,26 @@ android {
         getByName("debug") {
 
             isDebuggable = true
-            //  buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"") -> test
+            //  buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"") -> for test, this url is not working
             buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
             resValue("string", "new_name", "[DEBUG] Horoscope")
         }
     }
+
+
+flavorDimensions += "version"
+     productFlavors {
+         create("free") {
+             dimension = "version"
+             applicationIdSuffix = ".free"
+             versionNameSuffix = "-free"
+         }
+         create("premium") {
+             dimension = "version"
+             applicationIdSuffix = ".premium"
+             versionNameSuffix = "-premium"
+         }
+     }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -101,3 +116,4 @@ dependencies {
     androidTestImplementation("androidx.fragment:fragment-testing:1.6.1")
     kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.48")
 }
+
