@@ -43,7 +43,6 @@ android {
         }
     }
 
-
 flavorDimensions += "version"
      productFlavors {
          create("free") {
