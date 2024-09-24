@@ -33,7 +33,7 @@ class HoroscopeDetailViewModel @Inject constructor(private val getPredictionUseC
                     HoroscopeDetailState.Success(result.horoscope, result.sign, horoscope)
             } else {
                 _state.value =
-                    HoroscopeDetailState.Error("Ha ocurrido un error, intente mas tarde")
+                    HoroscopeDetailState.Error("An error has occurred, try again later")
             }
         }
     }

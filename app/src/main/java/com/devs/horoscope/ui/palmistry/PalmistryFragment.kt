@@ -34,7 +34,7 @@ class PalmistryFragment : Fragment() {
         } else {
             Toast.makeText(
                 requireContext(),
-                "Acepta los permisos para usar la camara",
+                "Accept permissions to use the camera",
                 Toast.LENGTH_LONG
             ).show()
         }

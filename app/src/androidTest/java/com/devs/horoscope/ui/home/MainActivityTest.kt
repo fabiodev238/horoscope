@@ -58,6 +58,5 @@ class MainActivityTest {
         )
         intended(hasComponent(HoroscopeDetailActivity::class.java.name))
     }
-
 }
 
